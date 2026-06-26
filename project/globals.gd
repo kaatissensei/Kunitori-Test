@@ -10,7 +10,7 @@ var cOrange : Color = Color.html("#ff8a00")
 var cLBlue : Color = Color.html("#00fff0")
 var cPink : Color = Color.html("#fa6eff")
 var cLGreen : Color = Color.html("#80ff00")
-var cBurgundy : Color = Color.html("b50060")
+var cBurgundy : Color = Color.html("910050")
 
 var COLORS = [cGray, cRed, cBlue, cYellow, cGreen, cPurple, cOrange, cLBlue, cPink, cLGreen, cBurgundy] #Is this burgundy? Idc.
 var prefectures : Array[String]
@@ -58,7 +58,7 @@ func set_color(pref_num :int, team_num :int):
 
 func get_bbColor(team_num: int):
 	var teamColors = ["None", "Red", "Blue", "Yellow", "Green", "Purple", "Orange", "Light Blue", "Pink", "Light Green", "Burgundy"]
-	var hexColors = ["dim_gray", "#e60000", "#0000ff", "ffff00", "00af00", "a200ff", "ff8a00", "00fff0", "fa6eff", "80ff00", "B50060"]
+	var hexColors = ["dim_gray", "#e60000", "#0000ff", "ffff00", "00af00", "a200ff", "ff8a00", "00fff0", "fa6eff", "80ff00", "910050"]
 	
 	return "[color=%s]%s[/color]" % [hexColors[team_num], teamColors[team_num]]
 
