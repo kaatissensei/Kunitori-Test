@@ -9,12 +9,15 @@ var cPurple : Color = Color.html("#a200ff")
 var cOrange : Color = Color.html("#ff8a00")
 var cLBlue : Color = Color.html("#00fff0")
 var cPink : Color = Color.html("#fa6eff")
+var cLGreen : Color = Color.html("#80ff00")
+var cBurgundy : Color = Color.html("b50060")
 
-var COLORS = [cGray, cRed, cBlue, cYellow, cGreen, cPurple, cOrange, cLBlue, cPink]
+var COLORS = [cGray, cRed, cBlue, cYellow, cGreen, cPurple, cOrange, cLBlue, cPink, cLGreen, cBurgundy] #Is this burgundy? Idc.
 var prefectures : Array[String]
 var PREF_BTN = preload("res://prefecture_button.tscn")
 
-var numTeams = 8
+var numTeams : int = 8
+var max_teams : int = 10
 
 var scores : Array[int]
 var selected_prefecture : Node
@@ -28,7 +31,7 @@ var paused : bool = false
 
 func _ready() -> void:
 	set_prefectures()
-	scores.resize(8)
+	scores.resize(max_teams)
 	scores.fill(0)
 	pref_colors.resize(47)
 	pref_colors.fill(0)
@@ -54,8 +57,8 @@ func set_color(pref_num :int, team_num :int):
 	pref_colors[pref_num - 1] = team_num
 
 func get_bbColor(team_num: int):
-	var teamColors = ["None", "Red", "Blue", "Yellow", "Green", "Purple", "Orange", "Light Blue", "Pink"]
-	var hexColors = ["dim_gray", "#e60000", "#0000ff", "ffff00", "00af00", "a200ff", "ff8a00", "00fff0", "fa6eff"]
+	var teamColors = ["None", "Red", "Blue", "Yellow", "Green", "Purple", "Orange", "Light Blue", "Pink", "Light Green", "Burgundy"]
+	var hexColors = ["dim_gray", "#e60000", "#0000ff", "ffff00", "00af00", "a200ff", "ff8a00", "00fff0", "fa6eff", "80ff00", "B50060"]
 	
 	return "[color=%s]%s[/color]" % [hexColors[team_num], teamColors[team_num]]
 
