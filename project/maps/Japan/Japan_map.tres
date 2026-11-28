@@ -1,1 +1,12 @@
+[gd_resource type="Resource" script_class="Map" format=3 uid="uid://b506h2jk4nmve"]
 
+[ext_resource type="Script" uid="uid://tovlpdtfrex8" path="res://assets/scripts/map.gd" id="1_ifr6s"]
+
+[resource]
+script = ExtResource("1_ifr6s")
+ROUTES = "res://maps/Japan/map_bg/Japan_routes.png"
+OUTLINE = "res://maps/Japan/map_bg/Japan_outline.png"
+NUMBERS = "res://maps/Japan/map_bg/Japan_numbers.png"
+scores_size = Vector2(830, 460)
+scores_position = Vector2(120, 20)
+metadata/_custom_type_script = "uid://tovlpdtfrex8"

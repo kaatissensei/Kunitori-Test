@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://cen6lst0h3eax"]
+
+[ext_resource type="Theme" uid="uid://dpi2juxwmdh7f" path="res://MapOption.tres" id="1_twwxa"]
+[ext_resource type="Script" uid="uid://c3ny6qbjpnvdl" path="res://map_option.gd" id="1_u2fm0"]
+[ext_resource type="Texture2D" uid="uid://orgxlwg07klr" path="res://maps/World/World_Map.png" id="2_u2fm0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u2fm0"]
+
+[node name="MapOption" type="Button" unique_id=705586291]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1574.0
+offset_bottom = -827.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_u2fm0")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_u2fm0")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_u2fm0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_u2fm0")
+script = ExtResource("1_u2fm0")
+
+[node name="VBox" type="VBoxContainer" parent="." unique_id=1435625588]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="MapLabel" type="RichTextLabel" parent="VBox" unique_id=439868488]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+mouse_filter = 1
+theme = ExtResource("1_twwxa")
+text = "Map Name"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MapImage" type="TextureRect" parent="VBox" unique_id=1439794185]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 4.0
+texture = ExtResource("2_u2fm0")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BG" type="Panel" parent="VBox/MapImage" unique_id=283601467]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme = ExtResource("1_twwxa")

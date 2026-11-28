@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Map" format=3 uid="uid://ovpk6ctk0mnc"]
+
+[ext_resource type="Script" uid="uid://tovlpdtfrex8" path="res://assets/scripts/map.gd" id="1_gvimn"]
+
+[resource]
+script = ExtResource("1_gvimn")
+map_name = "World"
+map_position = Vector2(136, 0)
+scores_size = Vector2(370, 730)
+scores_position = Vector2(0, 340)
+scores_scale = 0.9
+scores_horizontal = false
+metadata/_custom_type_script = "uid://tovlpdtfrex8"

@@ -1,0 +1,34 @@
+[gd_resource type="Theme" format=3 uid="uid://dpi2juxwmdh7f"]
+
+[ext_resource type="FontFile" uid="uid://cakqrch6dogsa" path="res://assets/Project Paintball Display.ttf" id="1_32nmx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3facx"]
+bg_color = Color(0, 0.40392157, 1, 1)
+border_width_left = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.05882353, 0.05882353, 0.05882353, 1)
+border_blend = true
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q50q8"]
+bg_color = Color(0.13725491, 0.13725491, 0.2784314, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.05882353, 0.05882353, 0.05882353, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+
+[resource]
+Panel/styles/panel = SubResource("StyleBoxFlat_3facx")
+RichTextLabel/colors/font_shadow_color = Color(0.05882353, 0.05882353, 0.05882353, 1)
+RichTextLabel/constants/shadow_offset_x = 1
+RichTextLabel/constants/shadow_offset_y = 1
+RichTextLabel/constants/shadow_outline_size = 5
+RichTextLabel/font_sizes/normal_font_size = 60
+RichTextLabel/fonts/normal_font = ExtResource("1_32nmx")
+RichTextLabel/styles/normal = SubResource("StyleBoxFlat_q50q8")
